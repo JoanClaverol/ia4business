@@ -1,0 +1,58 @@
+---
+title: "Minimización de costes"
+output: 
+  html_document:
+    toc: true 
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Objetivo
+
+Reducir los costes energéticos de los datos de centro de Google. 
+**Minimizar** los costes usando **Deep Q-Learning**. 
+
+Definir el problema: 
+
+Servidor: permite a los usuarios conectarse a él. 
+Usuarios -> Servidor
+Datos -> Servidor
+
+Servidor -> Usuario
+Servidor -> Datos
+
+Necesitamos un sistema que regule la temperatura del servidor. 
+
+Estados:
+
+* Sabiendo la información t: 
+  * Temperatura servidor
+  * Número de usuarios
+  * La velocidad de transimisión de los datos
+  
+Acciones: 
+
+* 5 tipo de acciones: 
+  * **0**: -3ºC
+  * **1**: -1.5ºC
+  * **2**: 0 ºC
+  * **3**: +1.5ºC
+  * **4**: +3ºC
+  
+##### Parámetros: 
+
+Definimos que el servidor tiene de entre **18ºC hasta 24ºC**. 
+Contra màs usuarios y/o datos, más temperatura. 
+La medida de tiempo que usaremos serán minutos. 
+
+¿Qué tanto mejor actual el sistema artificial al sistema integrado de los servidores?
+
+
+
+## Example
+
+- <input type="checkbox" checked disabled> Ejemplo
+- <input type="checkbox" checked enabled> Ejemplo 3
