@@ -1,0 +1,3 @@
+"""
+GOAL: creacion del entrenamiento
+"""
